@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: aqua;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  background-image: url(/assets/images/sky.jpg);
+  background-size: cover;
+  background-position: center;
+}
+header {
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50px;
+}
+h1 {
+  text-align: center;
+}
+.base {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+.menu {
+  display: flex;
+  flex-basis: 20%;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+.menu a {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 20cap;
+  background-color: rgba(0, 255, 255, 0.167);
+}
+.gal {
+  display: grid;
+  width: 100%;
+  grid-template: repeat(3, 250px) / repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1%;
+}
+.pic {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  //object-fit: cover;//
+  object-fit: contain;
+  margin: 10px;
+}
+.pic:hover {
+  transform: scale(1.2);
+}
